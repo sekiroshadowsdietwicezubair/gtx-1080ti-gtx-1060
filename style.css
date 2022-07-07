@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.shah{
+    height:40px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;   
+}
+nav{
+    display: flex;
+}
+.logo{
+    color: white;
+    font-size: 30px;
+    margin-left: 30px;
+}
+.logo span{
+    color: rgb(14, 201, 39);
+    font-size: 30px; 
+  
+}
+.navigation{
+ margin-left: 500px;
+}
+
+.navigation ul {
+    display: flex;
+
+    list-style-type: none;
+   
+    
+}
+.navigation ul li{
+    padding: 10px 10px 10px 30px;
+}
+
+.navigation ul li a{
+    color: antiquewhite;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.navigation ul li a:hover{
+    color:rgb(14, 201, 39);
+    font-size: 23px;
+}
+.rana{
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+ margin-top: 1px;
+
+
+}
+
+.imagenav{
+    width: 28%;
+}
+.imagenav img{
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 8px;
+    animation-name: tasweer;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: 0.4s;
+}
+.imagenav img:hover{
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 8px;
+    animation-name: tasweer;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    height: 60px;
+}
+
+
+.image1{
+    background-color: rgb(140, 140, 140);
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    border-bottom: 5px solid rgb(1, 1, 2);
+}
+.image1 img{
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+    object-position:  center;
+    background-image: url(p3.jpg) ;
+    background-size: cover center; 
+}
+.division{
+  background-image: linear-gradient(rgb(175 215 13),rgba(145, 211, 145, 0.662),rgb(175 215 13));
+  height: 300px;
+  display: flex;
+  overflow: hidden;
+}
+.first{
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+}
+.second{
+    border: 1px solid black;
+    height: 400px;
+    width: 800px;
+}
+.third{
+    border: 1px solid rgb(0, 0, 0)  ;
+    height: 400px;
+    width: 400px;    
+}
+.first {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+
+
+}
+.first ul{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.first ul li{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.first ul li:nth-child(2n + 1){
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+
+
+.first ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.second h1{
+   width: 500px;
+   margin: auto;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+.second p{
+    width: 100%;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+    color: rgb(36, 31, 24);
+    margin-top: 26px;
+}
+.second p::first-letter{
+    font-size: 35px;
+    color: rgb(123, 70, 1);
+}
+.third{
+    animation-name: phikas;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.third h1{
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+    animation-name: phika;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes tasweer{
+    10%{margin-left: 8px; }
+    30%{margin-left: 80px;}
+    50%{margin-left: 160px;}
+    75%{margin-left: 80px;}
+    100%{margin-left: 8px;}
+}
+/* }@keyframes phika{
+    1%{color: rgba(0, 0, 0, 0.342);}
+    50%{color: rgb(0, 102, 2);}
+    100%{color: rgba(0, 0, 0, 0.86); }
+} */
+@keyframes phikas{
+    /* 1%{background-color: rgba(191, 95, 95, 0.342);}
+    50%{background-color: rgb(101, 224, 103);}
+    100%{background-color: rgba(212, 87, 87, 0.86); } */
+    1%{ background-image: url(logoimage.jpg);background-size: cover;color: white;}
+    50%{background-image: url(logoimage2.jpg);background-size: cover;color: antiquewhite;}
+    100%{background-image: url(birdslogo.png);background-size: cover;}
+
+}
+
+
+
